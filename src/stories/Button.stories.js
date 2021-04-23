@@ -19,17 +19,20 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  heading1: 'tets',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
+  heading1: 'tets',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   label: 'Button',
+  heading1: 'tets',
 };
 
 export const Small = Template.bind({});

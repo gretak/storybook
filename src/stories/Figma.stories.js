@@ -1,13 +1,14 @@
 import { withDesign } from 'storybook-addon-designs'
-import MyButton from './Button1.vue';
+import Hero from './Hero.vue';
+
 
 export default {
     title: 'Example/My-stories',
-    component: MyButton,
+    component: Hero,
     decorators: [withDesign],
 }
 
-export const myStory = () => <MyButton>Hello, World!</MyButton>
+export const myStory = () => <Hero>Hello, World!</Hero>
 
 myStory.parameters = {
     design: {
