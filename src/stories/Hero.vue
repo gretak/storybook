@@ -1,7 +1,7 @@
 <template>
-<div>
+<div :style="style">
   <div id="hero1"
-     class="hero hero--style-pblg"
+     class="hero" :class="sizeclass" 
      data-url-base="https://prd-cdn.aberdeenstandard.net/-/media/aam-web/images/hero-images/"
      data-url-file="asi_solar_notext_1440x770_webbanner_v2.ashx?modified=20201009082638"
      data-image-sources="https://prd-cdn.aberdeenstandard.net/-/media/aam-web/images/hero-images/asi_solar_notext_1440x770_webbanner_v2.ashx"
@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import './hero.css';
 
 export default {
   name: 'hero',
@@ -60,23 +59,20 @@ export default {
         return ['mini', 'plg', 'ptlg'].indexOf(value) !== -1;
       },
     },
-    backgroundGradient: {
+    backgroundColor: {
       type: String,
     }
   },
 
   computed: {
-    classes() {
+    sizeclass() {
       return {
-        'storybook-button': true,
-        'storybook-button--primary': this.primary,
-        'storybook-button--secondary': !this.primary,
-        [`storybook-button--${this.size}`]: true,
+        [`hero--style-${this.size}`]: true,
       };
     },
     style() {
       return {
-        backgroundGradient: this.backgroundGradient,
+        backgroundColor: this.backgroundColor,
       };
     },
   },

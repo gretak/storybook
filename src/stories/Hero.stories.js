@@ -6,7 +6,7 @@ export default {
   component: Hero,
   argTypes: {
     size: { control: { type: 'select', options: ['mini', 'plg', 'ptlg'] } },
-    backgroundGradient: { control: 'color' }
+    backgroundColor: { control: 'color' },
   },
   decorators: [withDesign],
 };
