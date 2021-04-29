@@ -2,7 +2,7 @@ import MyHeader from './Header';
 import { withDesign } from 'storybook-addon-designs';
 
 export default {
-  title: 'Example/Header',
+  title: 'Example/Header(Storybook example)',
   component: MyHeader,
   decorators: [withDesign],
 };
