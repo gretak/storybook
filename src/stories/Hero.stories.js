@@ -88,3 +88,12 @@ Large.story = {
     }
   }
 }
+
+HasCTA.story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/jWxccJwguU2RHdxXvwRGkh/test-Figma?node-id=24%3A0'
+    }
+  }
+}
