@@ -2,7 +2,7 @@
 <div :style="style">
   <div id="hero1"
      class="hero"  :style="style1" :class="sizeclass" 
-     data-url-base="https://prd-cdn.aberdeenstandard.net/-/media/aam-web/images/hero-images/"
+     :data-url-base="urlbase"
      data-url-file="asi_solar_notext_1440x770_webbanner_v2.ashx?modified=20201009082638"
      data-image-sources="https://prd-cdn.aberdeenstandard.net/-/media/aam-web/images/hero-images/asi_solar_notext_1440x770_webbanner_v2.ashx"
   >
@@ -38,18 +38,16 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
     },
     subtitle: {
       type: String,
-      required: true,
     },
     label: {
       type: String,
     },
     size: {
       type: String,
-      default: 'plg',
+      default: 'ptlg',
       validator: function (value) {
         return ['mini', 'plg', 'ptlg'].indexOf(value) !== -1;
       },
@@ -61,6 +59,9 @@ export default {
         return ['none','darkBlue', 'grey', 'lightBlue'].indexOf(value) !== -1;
       },
     },
+    urlbase: {
+      type: String,
+    }
   },
 
   computed: {

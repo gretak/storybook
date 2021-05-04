@@ -2,7 +2,7 @@ import { withDesign } from 'storybook-addon-designs'
 import Hero from './Hero.vue';
 
 export default {
-  title: 'Example/Hero(ASI)',
+  title: 'Hero(ASI)',
   component: Hero,
   argTypes: {
     size: { control: { type: 'select', options: ['mini', 'plg', 'ptlg'] } },
@@ -14,7 +14,7 @@ export default {
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { Hero },
-  template: '<hero @onClick="onClick" v-bind="$props" />',
+  template: '<Hero @onClick="onClick" v-bind="$props" />',
 });
 
 export const Default = Template.bind({});
