@@ -5,7 +5,7 @@ export default {
   title: 'Hero(ASI)',
   component: Hero,
   argTypes: {
-    size: { control: { type: 'select', options: ['mini', 'plg', 'ptlg'] } },
+    size: { control: { type: 'select', options: ['mini', 'plg', 'ptlg', 'mtlg'] } },
     gradient: { control: { type: 'select', options: ['none', 'darkBlue', 'grey', 'lightBlue'] } },
   },
   decorators: [withDesign],

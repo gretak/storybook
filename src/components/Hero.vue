@@ -49,7 +49,7 @@ export default {
       type: String,
       default: 'ptlg',
       validator: function (value) {
-        return ['mini', 'plg', 'ptlg'].indexOf(value) !== -1;
+        return ['mini', 'plg', 'ptlg', 'mtlg'].indexOf(value) !== -1;
       },
     },
     gradient: {

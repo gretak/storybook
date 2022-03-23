@@ -20,6 +20,13 @@
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
     <h3>Ecosystem</h3>
+    <Hero 
+      size="ptlg"
+      title="Hero banner"
+      subtitle="Invest today. Change tomorrow." 
+      urlbase="https://prd-cdn.aberdeenstandard.net/-/media/aam-web/images/hero-images/"
+    />
+
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
@@ -31,10 +38,15 @@
 </template>
 
 <script>
+import Hero from './Hero.vue';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+    Hero
   }
 }
 </script>
