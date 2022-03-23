@@ -6,7 +6,6 @@ export default {
   component: Button,
   argTypes: {
     type: { control: { type: 'select', options: ['primary', 'primary__white' ,'bordered', 'bordered__white' ,'naked', 'naked__white'] } },
-    gradient: { control: { type: 'select', options: ['none', 'darkBlue', 'grey', 'lightBlue'] } },
   },
   decorators: [withDesign],
 };

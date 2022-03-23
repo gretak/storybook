@@ -27,13 +27,6 @@ export default {
         return ['primary', 'primary__white', 'bordered', 'bordered__white', 'naked', 'naked__white'].indexOf(value) !== -1;
       },
     },
-    gradient: {
-      type: String,
-      default: 'grey',
-      validator: function (value) {
-        return ['none','darkBlue', 'grey', 'lightBlue'].indexOf(value) !== -1;
-      },
-    },
     arrow: {
       type: Boolean,
       default: true,
@@ -48,12 +41,7 @@ export default {
       return {
         [`abrdn-btn--${this.type}`]: true,
       };
-    },
-    gradientclass() {
-      return {
-        [`${this.gradient}`]: true,
-      };
-    },
+    }
 
   },
 
